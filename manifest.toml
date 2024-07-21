@@ -54,9 +54,10 @@ ram.runtime = "3G"
     ask.en = "Choose the forge you use"
     ask.fr = "Choisissez la forge que vous utilisez"
     type = "select"
-    choices.github = "Github"
+    choices.github = "GitHub"
     choices.gitlab = "GitLab"
-    default = "github"
+    choices.gitea = "Gitea/Forgejo"
+    default = "gitea"
     optional = true
 
     [install.forge_username]
@@ -71,6 +72,12 @@ ram.runtime = "3G"
     ask.fr = "Jeton de votre forge (OAuth)"
     type = "string"
     example = "A secret token"
+    optional = true
+
+    [install.forge_domain]
+    ask.en = "Your forge's domain (needed only for Gitea/Forgejo/GitLab)"
+    type = "string"
+    example = "Domain name of your forge"
     optional = true
 
 [resources]

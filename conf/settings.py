@@ -213,6 +213,23 @@ TEMPLATES = [
     }
 ]
 
+# Gitea/Forgejo username and token for sending merge requests.
+# Please see the documentation for more details.
+GITEA_CREDENTIALS = {
+    "__GITEA_DOMAIN__": {
+        "username": "__GITEA_USERNAME__",
+        "token": "__GITEA_TOKEN__",
+    }
+}
+
+# GitLab username and token for sending merge requests.
+# Please see the documentation for more details.
+GITLAB_CREDENTIALS = {
+    "__GITLAB_DOMAIN": {
+        "username": "__GITLAB_USERNAME__",
+        "token": "__GITLAB_TOKEN__",
+    }
+}
 
 # GitHub username and token for sending pull requests.
 # Please see the documentation for more details.
@@ -222,26 +239,14 @@ GITHUB_CREDENTIALS = {
         "token": "__GITHUB_TOKEN__",
     }
 }
-# Azure DevOps username and token for sending pull requests.
-# Please see the documentation for more details.
-AZURE_DEVOPS_CREDENTIALS = {}
-
-# Azure DevOps username and token for sending pull requests.
-# Please see the documentation for more details.
-AZURE_DEVOPS_CREDENTIALS = {}
-
-# GitLab username and token for sending merge requests.
-# Please see the documentation for more details.
-GITLAB_CREDENTIALS = {
-    "gitlab.com": {
-        "username": "__GITLAB_USERNAME__",
-        "token": "__GITLAB_TOKEN__",
-    }
-}
 
 # Bitbucket username and token for sending merge requests.
 # Please see the documentation for more details.
 BITBUCKETSERVER_CREDENTIALS = {}
+
+# Azure DevOps username and token for sending pull requests.
+# Please see the documentation for more details.
+AZURE_DEVOPS_CREDENTIALS = {}
 
 # Authentication configuration
 AUTHENTICATION_BACKENDS = (
