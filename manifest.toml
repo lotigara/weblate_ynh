@@ -75,6 +75,7 @@ ram.runtime = "3G"
     optional = true
 
     [install.forge_domain]
+    visible = "used_forge == 'gitea' or 'gitlab'"
     ask.en = "Your forge's domain (needed only for Gitea/Forgejo/GitLab)"
     type = "string"
     example = "Domain name of your forge"
